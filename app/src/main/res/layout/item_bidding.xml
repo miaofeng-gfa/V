@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/bidding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:gravity="center_vertical"
+        android:paddingLeft="28px"
+        android:paddingRight="28px">
+
+        <TextView
+            android:id="@+id/bidding_tag"
+            android:layout_width="56px"
+            android:layout_height="28px"
+            android:gravity="center"
+            android:textSize="10sp" />
+
+        <com.veeca.ted.v.widget.CircleImageView
+            android:id="@+id/bidding_avatar"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="32px"
+            android:layout_toRightOf="@id/bidding_tag" />
+
+        <TextView
+            android:id="@+id/bidding_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12px"
+            android:layout_toRightOf="@id/bidding_avatar"
+            android:textColor="@color/font_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bidding_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="126px"
+            android:layout_toRightOf="@id/bidding_avatar"
+            android:textColor="@color/font_fa"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bidding_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/font_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</RelativeLayout>

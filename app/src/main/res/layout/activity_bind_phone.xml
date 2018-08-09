@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/yellow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/phone_title"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="92px"
+        android:layout_below="@id/top"
+        android:layout_margin="32px"
+        android:background="@drawable/phone_kuang"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="24px">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="400px"
+        android:layout_height="92px"
+        android:layout_below="@id/linear1"
+        android:layout_marginLeft="32px"
+        android:background="@drawable/phone_kuang"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="24px">
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/get_code"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_below="@id/linear1"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="32px"
+        android:layout_toRightOf="@id/linear2"
+        android:background="@drawable/phone_kuang"
+        android:gravity="center"
+        android:text="获取短信验证码"
+        android:textColor="@color/font_color"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/phone_btn"
+        android:layout_width="656px"
+        android:layout_height="92px"
+        android:layout_below="@id/linear2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48px"
+        android:background="@mipmap/phone_btn_n" />
+</RelativeLayout>

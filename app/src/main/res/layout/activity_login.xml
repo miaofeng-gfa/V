@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="260px"
+        android:layout_height="128px"
+        android:layout_below="@id/login_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:src="@mipmap/login_logo" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="620px"
+        android:layout_height="94px"
+        android:layout_below="@id/login_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160px"
+        android:background="@mipmap/login_btn" />
+    <TextView
+        android:id="@+id/tv_mobile_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:textSize="25px"
+        android:text="手机动态码登录"/>
+
+</RelativeLayout>

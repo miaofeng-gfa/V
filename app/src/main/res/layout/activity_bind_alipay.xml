@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/top_return"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bind_alipay_title"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFBE1"
+        android:orientation="horizontal"
+        android:paddingBottom="8px"
+        android:paddingTop="8px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="需填写实名认证后的支付宝账号才能完成提现功能"
+            android:textColor="#FFA70E"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="24px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="24px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:background="@drawable/renzheng_kuang"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:text="真实姓名"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="36px"
+                android:layout_marginLeft="32px"
+                android:background="@color/font_gray_9" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="32px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的真实姓名"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:layout_marginTop="32px"
+            android:background="@drawable/renzheng_kuang"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:text="身份证号"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="36px"
+                android:layout_marginLeft="32px"
+                android:background="@color/font_gray_9" />
+
+            <EditText
+                android:id="@+id/ed_idCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginRight="32px"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的身份证号"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!--支付宝-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:layout_marginTop="32px"
+                android:background="@drawable/renzheng_kuang"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:text="支付宝号"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="2px"
+                    android:layout_height="36px"
+                    android:layout_marginLeft="32px"
+                    android:background="@color/font_gray_9" />
+
+                <EditText
+                    android:id="@+id/ed_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:layout_marginRight="32px"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入您的支付宝账号"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bind_btn"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:layout_marginTop="48px"
+        android:background="@drawable/login_btn"
+        android:text="确定"
+        android:textColor="@color/font_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECharts">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+			var width;
+			var height;
+			var myChart;
+			$(function() {
+				//自适应设置
+				width = $(window).width();
+				height = $(window).height();
+				$("#mainBar").css("width", width - 20);
+				$("#mainBar").css("height", height - 20);
+				console.log(height);
+				setEcharts();
+			});
+
+			$(window).resize(function() {
+				width = $(window).width();
+				height = $(window).height();
+				$("#mainBar").css("width", width - 20);
+				$("#mainBar").css("height", height - 20);
+			});
+
+			function setEcharts() {
+				myChart = echarts.init(document.getElementById('mainBar'));
+				var name = window.android.getName().split(",");
+				var data = window.android.getData().split(",");
+				var title = window.android.getTitle().split(",");
+				//自适应
+				window.onresize = myChart.resize;
+				// 指定图表的配置项和数据
+				var option = {
+					tooltip: {
+						trigger: 'item',
+						formatter: "{a} <br/>{b} : {d}%"
+					},
+					legend: {
+						orient: 'vertical',
+						x: 'right',
+						data: name
+					},
+                    color:['#FFE230', '#FFBC57', '#F29752', '#E5673C', '#9F3A3A'],
+					calculable: false,
+					series: [{
+						name: title,
+						type: 'pie',
+						radius: ['45%', '80%'],
+						itemStyle: {
+							normal: {
+								label: {
+									show: false
+								},
+								labelLine: {
+									show: false
+								}
+							}
+						},
+						data: [
+                             {value:data[0], name:name[0]},
+                             {value:data[1], name:name[1]},
+                             {value:data[2], name:name[2]},
+                             {value:data[3], name:name[3]},
+                             {value:data[4], name:name[4]}
+                        ]
+					}]
+				};
+
+				myChart.setOption(option);
+			}
+
+
+
+
+    </script>
+</head>
+
+<body>
+<div id="mainBar" style=""></div>
+<!-- 标签式引入Eharts 如果你把引用echarts的script标签放置head内在IE8-的浏览器中会出现报错，解决的办法就是把标签移动到body内（后）。 -->
+<script type="text/javascript" src="js/echarts-all.js"></script>
+<script>
+</script>
+</body>
+
+</html>

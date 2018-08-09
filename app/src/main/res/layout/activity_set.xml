@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/top_return"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/set_title"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cache_btn"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="32px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="24px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除图片缓存"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/set_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0M"
+            android:textColor="@color/font_gray_9"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="30px"
+            android:layout_marginLeft="12px"
+            android:src="@mipmap/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="3px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="24px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关于小V咖"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="30px"
+            android:src="@mipmap/right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="32px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="24px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="客服热线"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+        <!--13435160083-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400-8717-138"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_marginTop="3px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="24px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="客服微信号"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18911247150"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:layout_marginTop="32px"
+        android:background="@color/white"
+        android:paddingBottom="24px"
+        android:paddingLeft="32px"
+        android:paddingRight="32px"
+        android:paddingTop="24px">
+
+        <ImageView
+            android:layout_width="122px"
+            android:layout_height="122px"
+            android:src="@mipmap/veeca" />
+
+        <Button
+            android:id="@+id/set_btn1"
+            android:layout_width="270px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_btn"
+            android:text="下载二维码"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="下载二维码到相册，用微信扫描添加客服"
+            android:textColor="@color/font_gray_9"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/set_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/font_color"
+        android:text="退出登录"
+        android:textColor="@color/yellow"
+        android:textSize="14sp" />
+</LinearLayout>

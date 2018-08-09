@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/top_return"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/influence_title"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="264px"
+                android:background="@color/font_color"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/influence_top"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_influence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="12px"
+                android:text="@string/influence_text1"
+                android:textColor="@color/font_gray_7c"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/influence_linear1"
+                android:layout_width="match_parent"
+                android:layout_height="148px"
+                android:layout_marginTop="10px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.veeca.ted.v.widget.CircleImageView
+                    android:id="@+id/influence_weixin_avatar"
+                    android:layout_width="92px"
+                    android:layout_height="92px"
+                    android:layout_marginLeft="32px"
+                    android:src="@mipmap/weixin" />
+
+                <TextView
+                    android:id="@+id/influence_weixin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:layout_weight="1"
+                    android:text="@string/account_text1"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="27px"
+                    android:layout_height="40px"
+                    android:layout_marginRight="32px"
+                    android:src="@mipmap/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+                android:layout_marginTop="2px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:layout_weight="1"
+                    android:text="@string/influence_text2"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/weixin_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32px"
+                    android:text="@string/influence_text7"
+                    android:textColor="@color/font_gray_9"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/influence_linear2"
+                android:layout_width="match_parent"
+                android:layout_height="148px"
+                android:layout_marginTop="10px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.veeca.ted.v.widget.CircleImageView
+                    android:id="@+id/influence_weibo_avatar"
+                    android:layout_width="92px"
+                    android:layout_height="92px"
+                    android:layout_marginLeft="32px"
+                    android:src="@mipmap/weibo" />
+
+                <TextView
+                    android:id="@+id/influence_weibo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24px"
+                    android:layout_weight="1"
+                    android:text="@string/account_text2"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="27px"
+                    android:layout_height="40px"
+                    android:layout_marginRight="32px"
+                    android:src="@mipmap/right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="94px"
+                android:layout_marginTop="2px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:layout_weight="1"
+                    android:text="@string/influence_text4"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/weibo_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32px"
+                    android:text="@string/influence_text8"
+                    android:textColor="@color/font_gray_9"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="32px"
+                android:paddingTop="32px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32px"
+                    android:layout_marginRight="32px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="8px"
+                        android:layout_height="28px"
+                        android:background="@color/yellow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12px"
+                        android:text="@string/influence_text5"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_3"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/qq" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text3"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_4"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/gongzonghao" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text4"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_5"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/douban" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text5"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_6"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/zhihu" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text6"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_7"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/tieba" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text7"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_8"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/taobao" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text8"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_9"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/jingdong" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text9"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_10"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/tianya" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text10"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_11"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/douyu" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text11"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_12"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/meipai" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text12"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_13"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/yingke" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text13"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_14"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/miaopai" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text14"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_15"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/kuaishou_n" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text15"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_16"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/huajiao_n" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text16"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_17"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/momo_n" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text17"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_18"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/nice_n" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text18"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_19"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/xiaohongshu_n" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text19"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/influence_20"
+                            android:layout_width="92px"
+                            android:layout_height="92px"
+                            android:src="@mipmap/lingying_n" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:text="@string/account_text20"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="92px"
+                            android:layout_height="92px" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="92px"
+                            android:layout_height="92px" />
+
+                        <TextView
+                            android:layout_width="92px"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12px"
+                            android:gravity="center"
+                            android:textColor="@color/font_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/influence_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="72px"
+                    android:layout_marginLeft="32px"
+                    android:layout_marginRight="32px"
+                    android:layout_marginTop="32px"
+                    android:background="@drawable/login_btn"
+                    android:gravity="center"
+                    android:text="@string/influence_text6"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

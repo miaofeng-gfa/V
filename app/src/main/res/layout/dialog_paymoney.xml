@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+           android:layout_alignRight="@id/rl_dialog_pay"
+            android:layout_alignTop="@id/rl_dialog_pay"
+            android:src="@mipmap/close_n"/>-->
+        <RelativeLayout
+            android:id="@+id/rl_dialog_pay"
+            android:layout_width="620px"
+            android:layout_height="800px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/shang_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="打赏红包约聊TA"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用余额：0.00元"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/font_gray_d"
+                    android:textSize="8sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/et_paymoney"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/influence_btn"
+                    android:digits="1234567890"
+                    android:inputType="phone|number"
+                    android:hint="请输入打赏金额"
+                    android:textSize="12sp"/>
+
+                <EditText
+                    android:id="@+id/et_weixin"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/influence_btn"
+                    android:hint="请输入您的微信号"
+                    android:textSize="12sp"/>
+
+              <!--  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="领取任务需先完成小V认证"
+                    android:textColor="@color/font_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="认证成功更可获得"
+                        android:textColor="@color/font_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200"
+                        android:textColor="@color/font_7244"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个金币"
+                        android:textColor="@color/font_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/paymoney_btn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/oval_btn"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

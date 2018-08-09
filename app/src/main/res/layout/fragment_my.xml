@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/my_bg">
+
+        <com.veeca.ted.v.widget.CircleImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36px"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/my_profile"
+            android:layout_width="156px"
+            android:layout_height="48px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/card_bg"
+            android:gravity="center"
+            android:text="@string/my_text8"
+            android:textColor="@color/font_gray_b"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="36px"
+            android:paddingRight="36px">
+
+            <Button
+                android:id="@+id/my_invite"
+                android:layout_width="656px"
+                android:layout_height="118px"
+                android:background="@mipmap/invite" />
+
+            <LinearLayout
+                android:id="@+id/click_my1"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text1"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12px"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/font_gray_ef" />
+
+            <LinearLayout
+                android:id="@+id/click_my7"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text6"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ward_cont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12px"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/font_gray_ef" />
+
+            <LinearLayout
+                android:id="@+id/click_my3"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text3"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/my_influence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12px"
+                    android:textColor="@color/font_fa"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/font_gray_ef" />
+
+            <LinearLayout
+                android:id="@+id/click_my4"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text4"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/font_gray_ef" />
+
+            <LinearLayout
+                android:id="@+id/click_my2"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text2"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/font_gray_ef" />
+
+            <LinearLayout
+                android:id="@+id/click_my5"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text5"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/font_gray_ef" />
+
+
+            <!--<LinearLayout
+                android:id="@+id/click_my6"
+                android:layout_width="match_parent"
+                android:layout_height="96px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="36px"
+                    android:layout_height="36px"
+                    android:src="@mipmap/my7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_weight="1"
+                    android:text="@string/my_text7"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp" />
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

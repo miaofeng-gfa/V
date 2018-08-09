@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/top_return"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/invite_title"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:background="@color/font_gray_1c"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的专属邀请码"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="572px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="2"
+            android:text="通过此专属二维码下载的任何用户，你将额外获得其每笔收入5%的现金分红，永久有效。"
+            android:textColor="@color/font_gray_9"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="546px"
+            android:layout_height="802px"
+            android:layout_marginTop="24px"
+            android:background="@drawable/invite_btn"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/code"
+                android:layout_width="542px"
+                android:layout_height="798px" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/invite_btn"
+            android:layout_width="544px"
+            android:layout_height="80px"
+            android:layout_marginTop="24px"
+            android:background="@drawable/btn"
+            android:text="保存二维码"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

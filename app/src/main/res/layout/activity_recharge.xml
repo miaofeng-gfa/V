@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/top_return"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/recharge_title"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginTop="16px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="48px"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:paddingTop="48px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:background="@drawable/renzheng_kuang"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="24px"
+            android:paddingRight="24px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值金额"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="2px"
+                android:layout_height="32px"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:background="@color/font_color" />
+
+            <EditText
+                android:id="@+id/recharge_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式:"
+                android:textColor="@color/font_gray_60"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_marginLeft="12px"
+                android:src="@mipmap/zhifubao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+                android:text="支付宝"
+                android:textColor="@color/font_gray_60"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/recharge_btn"
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:layout_below="@id/linear"
+        android:layout_marginLeft="32px"
+        android:layout_marginRight="32px"
+        android:layout_marginTop="42px"
+        android:background="@drawable/login_btn"
+        android:text="立即充值"
+        android:textColor="@color/font_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

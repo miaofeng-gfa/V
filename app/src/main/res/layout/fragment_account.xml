@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/approve_text1"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24px"
+            android:text="@string/account_text"
+            android:textColor="@color/font_gray_c" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_1"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/weixin" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text1"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_2"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/weibo" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text2"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_3"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/qq" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text3"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_4"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/gongzonghao" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text4"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_5"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/douban" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text5"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_6"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/zhihu" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text6"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_7"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/tieba" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text7"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_8"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/taobao" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text8"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_9"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/jingdong" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text9"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_10"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/tianya" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text10"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_11"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/douyu" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text11"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_12"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/meipai" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text12"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_13"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/yingke" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text13"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_14"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/miaopai" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text14"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_15"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/kuaishou_n" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text15"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_16"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/huajiao_n" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text16"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="18px">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_17"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/momo_n" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text17"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_18"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/nice_n" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text18"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_19"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/xiaohongshu_n" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text19"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/account_20"
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:src="@mipmap/lingying_n" />
+
+            <TextView
+                android:layout_width="92px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
+                android:gravity="center"
+                android:text="@string/account_text20"
+                android:textColor="@color/font_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/account_btn"
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:layout_margin="32px"
+        android:background="@drawable/login_btn"
+        android:gravity="center"
+        android:text="极速认证"
+        android:textStyle="bold"
+        android:textColor="@color/font_color"
+        android:textSize="18sp" />
+</LinearLayout>

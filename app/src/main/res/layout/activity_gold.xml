@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96px"
+            android:background="@color/yellow">
+
+            <ImageView
+                android:id="@+id/top_return"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32px"
+                android:src="@mipmap/left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/gold_title"
+                android:textColor="@color/font_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260px"
+            android:background="@color/font_color"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的V币"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gold_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="32px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="小V咖金币系统介绍"
+                android:textColor="@color/font_gray_9"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="教你玩转V币"
+                android:textColor="@color/font_gray_b"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="金币是用户在小V咖进行日常操作行为时的附属奖励。用户在每天登录、完成任务、邀请好友等操作时均有机会获得金币奖励，金币可用于兑换小V咖金币商城内提供的丰富奖品。"
+                android:textColor="@color/font_gray_9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32px"
+                android:text="如何获得金币？"
+                android:textColor="@color/font_gray_9"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="用户第一次注册小V咖，奖励100金币\n每天登陆小V咖，奖励100金币\n每完成一次任务，奖励10金币，每天最高可得到30金币\n邀请好友注册小V咖，一个好友奖励10金币，上不封顶。"
+                android:textColor="@color/font_gray_9"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32px"
+                android:text="若遇到个人金币的记录异动，请联系客服说明具体情况。对于批量注册、恶意注册、以不良目的刷金币的用户，本站有权进行封禁甚至删除账号处理。"
+                android:textColor="@color/font_gray_9"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="32px">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V币商城"
+                    android:textColor="@color/font_gray_9"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="筹备中...敬请期待"
+                    android:textColor="@color/font_gray_b"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="132px"
+                android:layout_height="132px"
+                android:src="@mipmap/shoping" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

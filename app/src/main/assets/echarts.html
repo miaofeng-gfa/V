@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ECharts">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+		var width;
+		var height;
+		var myChart;
+		$(function() {
+			//自适应设置
+			width = $(window).width();
+			height = $(window).height();
+			$("#mainBar").css("width", width - 20);
+			$("#mainBar").css("height", height - 20);
+			//console.log(height);
+			setEcharts();
+		});
+
+		$(window).resize(function() {
+			width = $(window).width();
+			height = $(window).height();
+			$("#mainBar").css("width", width - 20);
+			$("#mainBar").css("height", height - 20);
+		});
+
+		function setEcharts() {
+			myChart = echarts.init(document.getElementById('mainBar'));
+			var xName = window.android.xName().split(",");
+			var data1 = window.android.data1().split(",");
+			var data2 = window.android.data2().split(",");
+			//自适应
+			window.onresize = myChart.resize;
+			// 指定图表的配置项和数据
+			var option = {
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						lineStyle: {
+							color: '#ffdd00'
+						}
+					},
+					textStyle: {
+						fontSize: 10
+					}
+				},
+				calculable: false,
+				grid: {
+				    borderWidth:0,
+					x: 30,
+					x2: 18,
+					y: 25,
+					y2:20
+				},
+				legend: {
+					data: ['赏金', '分红']
+				},
+
+				xAxis: [{
+					splitLine: {
+						show: false
+					}, //去除网格线
+					axisLine: {
+						lineStyle: {
+							color: '#EAECF0',
+						}
+					},
+					type: 'category',
+					boundaryGap: false,
+					data: xName
+				}],
+				yAxis: {
+				    type:'value',
+			    	splitLine: {
+						show: true,
+						lineStyle: {
+							color: '#EAECF0',
+							type: 'dashed'
+						}
+					},
+					axisLine: {
+						lineStyle: {
+							color: '#ffffff',
+						}
+					},
+					minInterval: 1
+				},
+				series: [{
+						name: '赏金',
+						type: 'line',
+						smooth: true,
+						symbol:'none',
+						itemStyle: {
+							normal: {
+								color: '#ffdd00',
+								areaStyle: {
+									normal: {}
+								}
+							}
+						},
+						data: data1
+					},
+					{
+						name: '分红',
+						type: 'line',
+						symbol:'none',
+						smooth: true,
+						itemStyle: {
+
+							normal: {
+								areaStyle: {
+									normal: {}
+								}
+							}
+						},
+						data: data2
+					}
+				]
+			};
+			myChart.setOption(option);
+		}
+
+    </script>
+</head>
+
+<body>
+<div id="mainBar" style=""></div>
+<!-- 标签式引入Eharts 如果你把引用echarts的script标签放置head内在IE8-的浏览器中会出现报错，解决的办法就是把标签移动到body内（后）。 -->
+<script type="text/javascript" src="js/echarts-all.js"></script>
+<script>
+</script>
+</body>
+
+</html>

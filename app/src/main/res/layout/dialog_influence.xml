@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="580px"
+        android:layout_height="626px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/influence_less">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="对不起，您的影响力值不足"
+                android:textColor="@color/font_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请尝试领取其他项目的赏金"
+                android:textColor="@color/font_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/influence_btn"
+            android:layout_width="match_parent"
+            android:layout_height="84px"
+            android:layout_marginLeft="98px"
+            android:layout_marginRight="98px"
+            android:layout_marginTop="484px"
+            android:background="@drawable/login_btn"
+            android:text="提升影响力"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

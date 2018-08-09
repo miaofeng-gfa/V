@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="240px"
+        android:layout_height="270px"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:background="@drawable/main_login_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="108px"
+            android:layout_height="108px">
+
+            <com.veeca.ted.v.widget.CircleImageView
+                android:id="@+id/popu_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/popu_sex"
+                android:layout_width="24px"
+                android:layout_height="24px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/man" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/popu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12px"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/popu_tags1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/font_gray_9"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/popu_tags2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/font_gray_9"
+            android:textSize="8sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px"
+        android:layout_marginTop="335px"
+        android:background="@drawable/dialog_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请留下您的微信号"
+            android:textColor="@color/font_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6px"
+            android:text="群主收到您的微信后将主动添加您进群"
+            android:textColor="@color/font_gray_9"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:layout_marginTop="32px"
+            android:background="@drawable/qun_v_kuang"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/free_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:background="@null"
+                android:hint="请输入微信号"
+                android:textColor="@color/font_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/free_btn"
+            android:layout_width="522px"
+            android:layout_height="70px"
+            android:layout_marginTop="32px"
+            android:background="@mipmap/free_btn"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/font_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/free_close"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="300px"
+        android:src="@mipmap/close_n" />
+</RelativeLayout>
